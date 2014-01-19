@@ -1,0 +1,69 @@
+/*
+  Icon Font: brandfont
+*/
+
+@font-face {
+  font-family: "brandfont";
+  src: url("../brandfont_7a0db639dcdbd6c92cd7de0198e06c22.eot");
+  src: url("../brandfont_7a0db639dcdbd6c92cd7de0198e06c22.eot?#iefix") format("embedded-opentype"),
+       url("../brandfont_7a0db639dcdbd6c92cd7de0198e06c22.woff") format("woff"),
+       url("../brandfont_7a0db639dcdbd6c92cd7de0198e06c22.ttf") format("truetype"),
+       url("../brandfont_7a0db639dcdbd6c92cd7de0198e06c22.svg#brandfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "brandfont";
+    src: url("../brandfont_7a0db639dcdbd6c92cd7de0198e06c22.svg#brandfont") format("svg");
+  }
+}
+
+[data-icon]:before { content: attr(data-icon); }
+
+[data-icon]:before,
+.bf-cc-amex:before,
+.bf-cc-discover:before,
+.bf-cc-mastercard:before,
+.bf-cc-paypal:before,
+.bf-cc-stripe:before,
+.bf-cc-visa:before,
+.bf-lastfm:before,
+.bf-lastfm-square:before,
+.bf-paypal:before,
+.bf-paypal-square:before,
+.bf-shapeways:before,
+.bf-shapeways-square:before,
+.bf-vimeo:before,
+.bf-vimeo-square:before,
+.bf-wallet:before,
+.bf-wallet-square:before {
+  display: inline-block;
+  font-family: "brandfont";
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  line-height: 1;
+  text-decoration: inherit;
+  text-transform: none;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+}
+
+.bf-cc-amex:before { content: "\f100"; }
+.bf-cc-discover:before { content: "\f101"; }
+.bf-cc-mastercard:before { content: "\f102"; }
+.bf-cc-paypal:before { content: "\f103"; }
+.bf-cc-stripe:before { content: "\f104"; }
+.bf-cc-visa:before { content: "\f105"; }
+.bf-lastfm:before { content: "\f109"; }
+.bf-lastfm-square:before { content: "\f10a"; }
+.bf-paypal:before { content: "\f106"; }
+.bf-paypal-square:before { content: "\f107"; }
+.bf-shapeways:before { content: "\f10b"; }
+.bf-shapeways-square:before { content: "\f10c"; }
+.bf-vimeo:before { content: "\f110"; }
+.bf-vimeo-square:before { content: "\f10f"; }
+.bf-wallet:before { content: "\f10e"; }
+.bf-wallet-square:before { content: "\f10d"; }
