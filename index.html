@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Brand Font Icons</title>
+
+    <style>
+      /* Page Styles */
+
+      * {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        background: #fff;
+        color: #444;
+        font: 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
+
+      a,
+      a:visited {
+        color: #888;
+        text-decoration: underline;
+      }
+      a:hover,
+      a:focus { color: #000; }
+
+      header {
+        margin-bottom: 20px;
+        overflow: hidden;
+        padding: 20px 0;
+      }
+
+      header h1 {
+        color: #666;
+        text-align: center;
+        font-size: 36px;
+        font-weight: 600;
+      }
+
+      header h2 {
+        color: #666;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+      }
+
+      header a {
+        float: right;
+        font-size: 14px;
+      }
+
+      .container {
+        margin: 0 auto;
+        max-width: 1200px;
+        min-width: 960px;
+        padding: 0 40px;
+        width: 90%;
+      }
+
+      .glyph {
+        border-bottom: 1px dotted #ccc;
+        padding: 10px 0 20px;
+        margin-bottom: 20px;
+      }
+
+      .preview-glyphs { vertical-align: bottom; }
+
+      .preview-scale {
+        color: #888;
+        font-size: 12px;
+        margin-top: 5px;
+      }
+
+      .step {
+        display: inline-block;
+        line-height: 1;
+        position: relative;
+        width: 10%;
+      }
+
+      .step .letters,
+      .step i {
+        -webkit-transition: opacity .3s;
+        -moz-transition: opacity .3s;
+        -ms-transition: opacity .3s;
+        -o-transition: opacity .3s;
+        transition: opacity .3s;
+      }
+
+      .step:hover .letters { opacity: 1; }
+      .step:hover i { opacity: .3; }
+
+      .letters {
+        opacity: .3;
+        position: absolute;
+      }
+
+      .characters-off .letters { display: none; }
+      .characters-off .step:hover i { opacity: 1; }
+
+      
+      .size-12 { font-size: 12px; }
+      
+      .size-14 { font-size: 14px; }
+      
+      .size-16 { font-size: 16px; }
+      
+      .size-18 { font-size: 18px; }
+      
+      .size-21 { font-size: 21px; }
+      
+      .size-24 { font-size: 24px; }
+      
+      .size-36 { font-size: 36px; }
+      
+      .size-48 { font-size: 48px; }
+      
+
+      .usage { margin-top: 10px; }
+
+      .usage input {
+        font-family: monospace;
+        margin-right: 3px;
+        padding: 2px 5px;
+        text-align: center;
+      }
+
+      .usage .point { width: 150px; }
+
+      .usage .class { width: 250px; }
+
+      footer {
+        color: #888;
+        font-size: 12px;
+        padding: 20px 0;
+      }
+
+      /* Icon Font: brandfont */
+
+      @font-face {
+  font-family: "brandfont";
+  src: url("./brandfont_7a0db639dcdbd6c92cd7de0198e06c22.eot");
+  src: url("./brandfont_7a0db639dcdbd6c92cd7de0198e06c22.eot?#iefix") format("embedded-opentype"),
+       url("./brandfont_7a0db639dcdbd6c92cd7de0198e06c22.woff") format("woff"),
+       url("./brandfont_7a0db639dcdbd6c92cd7de0198e06c22.ttf") format("truetype"),
+       url("./brandfont_7a0db639dcdbd6c92cd7de0198e06c22.svg#brandfont") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: "brandfont";
+    src: url("./brandfont_7a0db639dcdbd6c92cd7de0198e06c22.svg#brandfont") format("svg");
+  }
+}
+
+      [data-icon]:before { content: attr(data-icon); }
+
+      [data-icon]:before,
+      .bf-cc-amex:before,
+.bf-cc-discover:before,
+.bf-cc-mastercard:before,
+.bf-cc-paypal:before,
+.bf-cc-stripe:before,
+.bf-cc-visa:before,
+.bf-lastfm:before,
+.bf-lastfm-square:before,
+.bf-paypal:before,
+.bf-paypal-square:before,
+.bf-shapeways:before,
+.bf-shapeways-square:before,
+.bf-vimeo:before,
+.bf-vimeo-square:before,
+.bf-wallet:before,
+.bf-wallet-square:before {
+        display: inline-block;
+        font-family: "brandfont";
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        line-height: 1;
+        text-decoration: inherit;
+        text-transform: none;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+      }
+
+      .bf-cc-amex:before { content: "\f100"; }
+.bf-cc-discover:before { content: "\f101"; }
+.bf-cc-mastercard:before { content: "\f102"; }
+.bf-cc-paypal:before { content: "\f103"; }
+.bf-cc-stripe:before { content: "\f104"; }
+.bf-cc-visa:before { content: "\f105"; }
+.bf-lastfm:before { content: "\f109"; }
+.bf-lastfm-square:before { content: "\f10a"; }
+.bf-paypal:before { content: "\f106"; }
+.bf-paypal-square:before { content: "\f107"; }
+.bf-shapeways:before { content: "\f10b"; }
+.bf-shapeways-square:before { content: "\f10c"; }
+.bf-vimeo:before { content: "\f110"; }
+.bf-vimeo-square:before { content: "\f10f"; }
+.bf-wallet:before { content: "\f10e"; }
+.bf-wallet-square:before { content: "\f10d"; }
+
+      .iconholder {
+        width: 20%;
+        height: 100px;
+        float: left;
+        padding: 10px;
+        text-align: center;
+      }
+
+      #footer_text {
+        width: 450px;
+        margin: 0 auto;
+        text-align: center;
+      }
+    </style>
+
+    <!--[if lte IE 8]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+    <script>
+      function toggleCharacters() {
+        var body = document.getElementsByTagName('body')[0];
+        body.className = body.className === 'characters-off' ? '' : 'characters-off';
+      }
+    </script>
+  </head>
+
+  <body class="characters-off">
+    <div id="page" class="container">
+      <header>
+        <h1>BrandFont</h1>
+        <h2>An icon font of logos.</h2>
+      </header>
+
+      
+        <div class="iconholder">
+          <i id="bf-cc-amex" class="bf-cc-amex size-36"></i><br/>
+          .bf-cc-amex
+        </div>
+      
+        <div class="iconholder">
+          <i id="bf-cc-discover" class="bf-cc-discover size-36"></i><br/>
+          .bf-cc-discover
+        </div>
+      
+        <div class="iconholder">
+          <i id="bf-cc-mastercard" class="bf-cc-mastercard size-36"></i><br/>
+          .bf-cc-mastercard
+        </div>
+      
+        <div class="iconholder">
+          <i id="bf-cc-paypal" class="bf-cc-paypal size-36"></i><br/>
+          .bf-cc-paypal
+        </div>
+      
+        <div class="iconholder">
+          <i id="bf-cc-stripe" class="bf-cc-stripe size-36"></i><br/>
+          .bf-cc-stripe
+        </div>
+      
+        <div class="iconholder">
+          <i id="bf-cc-visa" class="bf-cc-visa size-36"></i><br/>
+          .bf-cc-visa
+        </div>
+      
+        <div class="iconholder">
+          <i id="bf-lastfm" class="bf-lastfm size-36"></i><br/>
+          .bf-lastfm
+        </div>
+      
+        <div class="iconholder">
+          <i id="bf-lastfm-square" class="bf-lastfm-square size-36"></i><br/>
+          .bf-lastfm-square
+        </div>
+      
+        <div class="iconholder">
+          <i id="bf-paypal" class="bf-paypal size-36"></i><br/>
+          .bf-paypal
+        </div>
+      
+        <div class="iconholder">
+          <i id="bf-paypal-square" class="bf-paypal-square size-36"></i><br/>
+          .bf-paypal-square
+        </div>
+      
+        <div class="iconholder">
+          <i id="bf-shapeways" class="bf-shapeways size-36"></i><br/>
+          .bf-shapeways
+        </div>
+      
+        <div class="iconholder">
+          <i id="bf-shapeways-square" class="bf-shapeways-square size-36"></i><br/>
+          .bf-shapeways-square
+        </div>
+      
+        <div class="iconholder">
+          <i id="bf-vimeo" class="bf-vimeo size-36"></i><br/>
+          .bf-vimeo
+        </div>
+      
+        <div class="iconholder">
+          <i id="bf-vimeo-square" class="bf-vimeo-square size-36"></i><br/>
+          .bf-vimeo-square
+        </div>
+      
+        <div class="iconholder">
+          <i id="bf-wallet" class="bf-wallet size-36"></i><br/>
+          .bf-wallet
+        </div>
+      
+        <div class="iconholder">
+          <i id="bf-wallet-square" class="bf-wallet-square size-36"></i><br/>
+          .bf-wallet-square
+        </div>
+      
+      <div style="clear:both;"></div>
+
+      <footer>
+        <div id="footer_text">
+          16 icons and counting. Made with <a href="http://www.bohemiancoding.com/sketch/">Sketch</a> &amp; <a href="http://fontcustom.com">Font Custom</a>.
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
